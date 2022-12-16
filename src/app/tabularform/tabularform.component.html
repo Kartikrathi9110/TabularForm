@@ -1,0 +1,23 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">DateTime</th>
+        <th scope="col">Open</th>
+        <th scope="col">High</th>
+        <th scope="col">Low</th>
+        <th scope="col">Close</th>
+        <th scope="col">Volume</th>
+      </tr>
+    </thead>
+    <tbody>
+     <tr *ngFor = "let trade of tradedetail">
+        <td>{{trade["date"]}}</td>
+        <td>{{trade["1. open"]}}</td>
+        <td>{{trade["2. high"]}}</td>
+        <td>{{trade["3. low"]}}</td>
+        <td>{{trade["4. close"]}}</td>
+        <td>{{trade["5. volume"]}}</td>
+
+     </tr>
+    </tbody>
+  </table>
